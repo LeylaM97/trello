@@ -1,0 +1,30 @@
+@media screen and (min-width: 480px) and (max-width: 640px){
+    .boards{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-row-gap: 0.5rem;
+        grid-column-gap: 0.5rem;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 800px){
+    .boards{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,auto);
+        grid-row-gap: 0.5rem;
+        grid-column-gap: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 801px){
+    .boards{
+        align-items: start;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        grid-column-gap: 0.5rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    html{
+        font-size: 15px;
+    }
+}
