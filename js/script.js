@@ -44,7 +44,7 @@ const boards = document.querySelectorAll('.board');
 boards.forEach(board => {
     board.ondrop = event => {
         event.preventDefault();
-        const data = event.dataTransfer.getData("text");
+        const data = event.dataTransfer.getData("text/plain");
         event.target.append(
             document.getElementById(data)
         );
@@ -55,5 +55,5 @@ boards.forEach(board => {
 });
 const card = document.querySelector('.card');
 card.ondragstart = event => {
-    event.dataTransfer.setData("text", event.target.id);
+    event.dataTransfer.setData("text/plain", event.target.id);
 };
